@@ -42,7 +42,6 @@ int main (){
     }else{
         printf("\n O valor foi encontrado na posicao: %d", _search + 1);
     }
-       
-
+    
     return 0;
 }
