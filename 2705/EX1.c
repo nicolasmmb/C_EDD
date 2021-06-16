@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #include <stdlib.h>
 
 int CrescenteRecursivo(int n, int y){
@@ -27,7 +26,7 @@ int DecrescenteRecursivo(int n, int y){
 
 int main (){
 
-   int fim=5, inicio=1;
+   int fim=250000, inicio=1;
 
    
    printf("Crescente Recursivo:\n");
