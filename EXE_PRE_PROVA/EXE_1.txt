@@ -1,0 +1,79 @@
+1)O que é um Tipo Abstrato de Dados (TAD)? Descreva com riqueza de detalhes dois exemplos de TADs.
+É conjunto que envolve a construção de uma estrutura para armazenar dados relacionados a algo e um conjunto de ações referentes a essa estrutura como editar, adicionar, excluir, editar entre outras.
+
+RESPOSTA: 
+typedef struct structClient
+{
+    char name[100];
+    int age;
+    char telephone[20];
+} typeClient;
+Foi definido um Struct com typedef que é uma palavra reservada
+        de que cria um nome adicional para um novo tipo de dados.Essa estrutura contém 3 variáveis duas sendo do tipo CHAR tendo 100 alocações e o segundo tem 20 alocações e tem uma variável INT.
+
+    == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == ==
+    =
+        typedef struct structPhone
+{
+    char NamePhone[32];  // CELL NICOLAS
+    char NameModel[16];  // Iphone XXX
+    char NumbModel[10];  // MHDH5BR/E
+    char NumbSerie[13];  // DF8F87N3N73D
+    char OS[12];         // iOS-14.7.1
+    char IMEI[20];       // 35 92 5476 743799 2
+    char NUMBER[18];     // +55 12 9911-26440
+    typeDate LaunchDate; // LaunchDate.day
+                         // LaunchDate.month
+                         // LaunchDate.year
+    float PRICE;         // 1.975
+} typePhone;
+
+typedef struct structDate
+{
+    int day;
+    int month;
+    int year;
+} typeDate;
+
+NamePhone foi definido com 32 posições para o usuário utilizar como nome do aparelho,
+NameModel é um padrão do sistema com 16 posições.
+NumbModel é uma identificação do sistema com 10 posições.
+NumbSerie é um número que o dispositivo saí de fábrica.
+OS é uma nomeação do sistema operacional do aparelho com 12 posições
+IMEI é um número de identificação global e único para cada telefone com 20 posições 
+NUMBER é o número do telefone no padrão brasileiro
+LaunchDate é um Struct com 3 campos INT sendo eles o Dia, Mês e Ano, para armazenar a data de lançamento.
+PRICE é um campo no formato FLOAT para armazenar o preço do dispositivo.
+Foi utilizado um typedef aninhado para gerar essa segunda estrutura de dados abstratos
+===========================================================================================
+===========================================================================================
+
+
+
+
+5) Utilizando os conceitos sobre ponteiros, codifique o restante da função abaixo que aloca uma matriz 
+dinamicamente.
+
+
+FUT **alocacaoDinMatriz(int *lin, int *col)
+{
+    int i;
+    FUT **team;
+    printf('Entre com o numero de divisoes: \n');
+    scanf('%d', &lin);
+    printf('Entre com o numero de times de cada divisao: \n');
+    scanf('%d', &col);
+
+
+    int j;
+    team = (FUT **)malloc(lin * sizeof(FUT *));
+    for (i = 0; i < lin; i++)
+    {
+        team[i] = (FUT *)malloc(col * sizeof(FUT));
+        for (j = 0; j < col; j++)
+        {
+            team[i][j] = RandFUT();
+        }
+    }
+    return (team);
+}
