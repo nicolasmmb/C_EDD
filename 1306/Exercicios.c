@@ -31,6 +31,8 @@ void imprimirCliente(CLIENTE *lista, int n)
     }
 }
 
+
+
 int menu()
 {
     int op;

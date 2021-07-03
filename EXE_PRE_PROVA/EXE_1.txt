@@ -35,6 +35,8 @@ typedef struct structDate
     int year;
 } typeDate;
 
+
+
 NamePhone foi definido com 32 posições para o usuário utilizar como nome do aparelho,
 NameModel é um padrão do sistema com 16 posições.
 NumbModel é uma identificação do sistema com 10 posições.

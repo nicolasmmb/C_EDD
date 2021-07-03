@@ -48,27 +48,27 @@ int main()
 //     char time;
 // }FUT;
 
-FUT **alocacaoDinMatriz(int *lin, int *col)
-{
-    int i;
-    FUT **team;
-    printf('Entre com o numero de divisoes: \n');
-    scanf('%d', &lin);
-    printf('Entre com o numero de times de cada divisao: \n');
-    scanf('%d', &col);
+// FUT **alocacaoDinMatriz(int *lin, int *col)
+// {
+//     int i;
+//     FUT **team;
+//     printf('Entre com o numero de divisoes: \n');
+//     scanf('%d', &lin);
+//     printf('Entre com o numero de times de cada divisao: \n');
+//     scanf('%d', &col);
 
-    int j;
-    team = (FUT **)malloc(lin * sizeof(FUT *));
-    for (i = 0; i < lin; i++)
-    {
-        team[i] = (FUT *)malloc(col * sizeof(FUT));
-        for (j = 0; j < col; j++)
-        {
-            team[i][j] = RandFUT();
-        }
-    }
-    return (team);
-}
+//     int j;
+//     team = (FUT **)malloc(lin * sizeof(FUT *));
+//     for (i = 0; i < lin; i++)
+//     {
+//         team[i] = (FUT *)malloc(col * sizeof(FUT));
+//         for (j = 0; j < col; j++)
+//         {
+//             team[i][j] = RandFUT();
+//         }
+//     }
+//     return (team);
+// }
 
 void ex4()
 {
