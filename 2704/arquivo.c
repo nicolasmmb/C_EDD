@@ -78,7 +78,6 @@ void meia_arvore(int rep){
 
 void config(){
     setlocale(LC_ALL, "");
-
 }
 
 
